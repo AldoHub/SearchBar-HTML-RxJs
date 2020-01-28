@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="main.css" type="text/css" rel="stylesheet" /> 
+    <link href="https://fonts.googleapis.com/css?family=Gelasio&display=swap" rel="stylesheet">
+    <title>SearchBar with RxJs</title>
+</head>
+<body>
+
+    <header>
+        <div>
+            <h1>Html <br/> SearchBar <br/> with RxJs</h1>
+            <p>Look for repos using the search box, then go to the repo documentation, clicking the "go to" button</p>
+        </div>
+
+        <img src="./Group 1.svg">
+    </header>
+
+    <main>
+        <div>
+            <form>
+                <input type="search" id="searchBar" placeholder="eg. react">
+            </form>
+        </div>
+        <p id="message">No repos to display</p>
+        <div id="reposContainer" class="repos-container"></div>  
+    </main>
+
+    <script src="https://unpkg.com/@reactivex/rxjs@5.0.3/dist/global/Rx.js"></script>
+    <script src="functions.js"></script>
+
+</body>
+</html>
